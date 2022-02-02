@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Outfit">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+    .attribution { font-size: 11px; text-align: center; color:#fff; }
+    .attribution a { color: hsl(0, 0%, 100%); }
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      background:hsl(217, 54%, 11%);
+      font-family: 'Outfit', sans-serif;
+    }
+    .box1{
+      background:hsl(216, 50%, 16%);
+      width:280px;
+      height:460px;
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%,-50%);
+      border-radius: 12px;
+    }
+    img{
+      width:250px;
+      height:240px;
+      border-radius: 8px;
+      /* margin:3px 5px; */
+    }
+    .box2{
+      /* border: 2px solid red; */
+      width: 250px;
+      height:470px;
+      margin:15px 15px;
+    }
+    h3{
+      color:#fff;
+    }
+    .box1 h3{
+      font-size: 18px;
+      font-weight:700;
+      margin-top: 10px;
+      margin-left: 2px;
+    }
+    .box1 p{
+      color:hsl(215, 51%, 70%);
+      font-size: 14px;
+      font-weight: 300;
+      margin-top: 15px;
+      margin-left: 2px;
+    }
+    .box1 h5{
+      color: hsl(178, 100%, 50%);
+      margin-top: 15px;
+      margin-left: 2px;
+    }
+    .box1 h5 span{
+      color:hsl(215, 51%, 70%);
+      margin-left: 70px;
+    }
+    .box1 h5 svg{
+      margin-right: 5px;
+    }
+    .box1 .line{
+      /* border: 2px solid red; */
+      width:250px;
+      height: 1px;
+      background-color:hsl(215, 51%, 70%);
+      margin-top: 15px;
+    }
+    .last{
+      /* border: 2px solid red; */
+      margin-top:15px;
+      margin-left: 2px;
+      width: 250px;
+      color: hsl(215, 51%, 70%);
+      font-size: 14px;
+    }
+    .box1 .last img{
+      margin-left: 2px;
+      margin-right: 8px;
+      margin-bottom: -10px;
+      border: 2px solid #fff;
+      border-radius: 15px;
+      width:30px;
+      height:30px;
+    }
+    .box1 .last span{
+      color:hsl(0, 0%, 100%);
+    }
+  </style>
+</head>
+<body>
+    <div class="box1">
+      <div class="box2">
+          <img src="images/image-equilibrium.jpg">
+            <h3>Equilibrium #3429</h3>
+            
+            <p>Our Equilibrium collection promotes balance and calm.</p>
+            <div class="eth">
+
+              <h5><svg width="11" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" fill="#00FFF8"/></svg>0.041 ETH
+                <span><svg width="15" height="15" xmlns="http://www.w3.org/2000/svg"><path d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z" fill="#8BACD9"/></svg>3 days left</span></h5>
+              </div>
+                <div class="line"></div>
+                <div class="last">
+                  <img src="images/image-avatar.png">
+                  Creation of <span>Jules Wyvern</span>
+                </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">K. Pranay</a>.
+    </div>
+</body>
+</html>
